@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Anjali",
+      "lastName": "Chorei",
+      "email": "a.chorei@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstName": "Chris",
+      "lastName": "Chorei",
+      "email": "cc777@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstName": "Christina",
+      "lastName": "Chae",
+      "email": "Cchae@gmail.com"
+    },
+    {
+      "id": 4,
+      "firstName": "Anjali",
+      "lastName": "Chorei",
+      "email": "anjali.c777@gmail.com"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<h2 >Display data using Interpolation From Object</h2>
+<table >
+  <tr>  <td> ID</td> <td>{{pro.id}}</td> </tr>
+  <tr><td> Name</td> <td>{{pro.name}}</td></tr>
+  <tr><td> Cost</td> <td>{{pro.cost}}</td> </tr>
+  <tr>
+      <td> Category</td> <td>{{pro.category}}</td>
+  </tr>
+</table>
+
+<h2>Display data using Interpolation From Array Of Object</h2>
+<table >
+   <thead><tr><th> Name</th><th>Cost</th> <th>Category</th>
+       </tr>
+   </thead>
+   <tbody >
+       <tr *ngFor="let pro of products">
+           <td>{{pro.name}}</td>
+           <td>{{pro.cost}}</td>
+           <td>{{pro.category}}</td>
+       </tr>
+         
+   </tbody>
+</table>
+
+<h2>Pipes Examples</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Annual Salary</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr *ngFor="let emp of employees"> 
+                        <td> {{emp.code}}</td>
+                        <td>{{emp.name | uppercase | genderpipe:emp.gender}}</td>
+                        <td>{{emp.gender}}</td>
+                        <td>{{emp.annualSalary}}</td>
+                        <td>{{emp.dateOfBirth | date:"fullDate"}}</td>
+                        <td>{{emp.dateOfBirth | date:"MM/dd/yy"}}</td>
+        </tr>    
+    </tbody>
+</table>
+
+<p><button class="btn btn-primary" (click)="myFunction()">Click Me</button>
+<button class="btn btn-secondary"  (click)="deleteProduct(100)">Delete</button>
+<button class="btn btn-danger" (click)="editProduct(100,'Note2')">Edit</button></p>
+
+
+

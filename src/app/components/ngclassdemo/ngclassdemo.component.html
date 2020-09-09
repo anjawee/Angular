@@ -1,0 +1,13 @@
+<div [ngStyle]="{'background-color':'darkmagenta' ,'color':'white', 'text-align': 'center'} ">  
+    DEMO FOR NGCLASS STYLE
+    </div>
+
+   <!-- <div [ngStyle]="{'background-color':person.country === 'UK' ? 'green' : 'red' }"></div>-->
+
+   <h4>NgStyleSample</h4>
+<ul *ngFor="let person of people">
+    <li [ngStyle]="{'color':getColor(person.country)}">
+        {{ person.name }}
+        {{ person.country }}
+    </li>
+</ul>
